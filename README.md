@@ -36,10 +36,7 @@ npm install
 
 Create a `.env` file at the root of your project and add the following variables:
 
-```bash
-JWT_SECRET=your-secret-key
-DATABASE_URL=urlbased
-```
+
 
 - `JWT_SECRET`: The secret key used for JWT authentication.
 - `DATABASE_URL`: The connection string for your PostgreSQL database.
@@ -51,6 +48,12 @@ After setting up your environment variables and installing the dependencies, you
 ```bash
 npm run start
 ```
+
+## Usage, Documentation, and Important Points
+
+To view the API documentation, open localhost:3000/api, which contains Swagger for easy interaction with the API endpoints.
+
+Additionally, by connecting to localhost:3000 with Socket.IO and subscribing to the avaliableDoctors event, you can get a real-time list of available doctors.
 
 This will start the application in development mode. The server will be available at `http://localhost:3000`.
 
